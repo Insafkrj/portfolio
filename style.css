@@ -1,0 +1,272 @@
+/* POLICE */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* TITRES & COULEURS PAR CONTEXTE */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.colored-section h1,
+.colored-section h2,
+.colored-section h3,
+.colored-section h4,
+.colored-section p {
+  color: #f5f5f5;
+}
+
+.white-section h1,
+.white-section h2,
+.white-section h3,
+.white-section h4,
+.white-section p {
+  color: #11114e;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #11114e;
+}
+
+.nav-photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #11114e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4444dd;
+}
+
+/* SECTIONS */
+.colored-section {
+  background-color: #11114e;
+  padding: 60px 20px;
+}
+
+.white-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+/* CONTAINERS */
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container-flex.vertical {
+  flex-direction: column;
+}
+
+/* COLONNES */
+.left-column, .right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title-heading {
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.title-image {
+  width: 80%;
+  max-width: 300px;
+  transform: rotate(5deg);
+}
+
+/* PROJETS */
+.projects-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  color: #11114e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* SECTION EN PRÉPARATION */
+.coming-soon {
+  justify-content: center;
+}
+
+.construction-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
+.construction-box img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* COMPÉTENCES */
+.skills-row {
+  width: 100%;
+  max-width: 600px;
+}
+
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.bar {
+  background: #ccc;
+  border-radius: 20px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.fill {
+  background: #11114e;
+  color: white;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  border-radius: 20px 0 0 20px;
+}
+
+/* FORMULAIRE */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  color: #11114e;
+}
+
+button {
+  background: #11114e;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333388;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: #11114e;
+}
+
+/* RÉSAUX SOCIAUX */
+.social-links {
+  margin-bottom: 15px;
+}
+
+.icon-link {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+.cv-link {
+  color: #11114e;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-column, .right-column {
+    text-align: center;
+  }
+  .title-heading {
+    text-align: center;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Insaf KORDJANI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>html{scroll-behavior:smooth;}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <nav class="nav-container">
+ <div class="nav-logo">
+  <img src="photo.png" alt="Insaf KORDJANI" class="nav-photo">
+  <span>Insaf KORDJANI</span>
+</div>
+
+      <ul class="nav-links">
+        <li><a href="#title">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ACCUEIL -->
+  <section class="colored-section" id="title">
+    <div class="container-flex">
+      <div class="left-column">
+        <h1 class="title-heading">Bienvenue !</h1>
+        <p><strong>Je suis Insaf KORDJANI, développeuse en devenir passionnée par le web et le design !</strong></p>
+      </div>
+      <div class="right-column">
+        <img src="illustration.png" alt="Illustration" class="title-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="white-section" id="about">
+    <div class="container-flex vertical">
+      <h2>À propos</h2>
+      <p>Je m'appelle <strong>Insaf KORDJANI</strong>, passionnée par la création de sites web modernes et interactifs. Actuellement étudiante en développement web, je cherche à améliorer mes compétences techniques et à construire des projets concrets.</p>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="colored-section" id="projects">
+  <div class="projects-row coming-soon">
+  <div class="construction-box">
+    <img src="coming.avif" alt="Section en préparation">
+    <p><strong>Section en préparation. Mes projets seront bientôt disponibles !</strong></p>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="white-section" id="skills">
+    <div class="container-flex vertical">
+      <h2>Mes Compétences</h2>
+      <div class="skills-row">
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="bar"><div class="fill" style="width: 95%;">95%</div></div>
+        </div>
+        <div class="skill">
+          <h4>CSS</h4>
+          <div class="bar"><div class="fill" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="bar"><div class="fill" style="width: 80%;">80%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="colored-section" id="contact">
+    <div class="container-flex vertical">
+      <h2>Contactez-moi</h2>
+      <form action="https://formspree.io/f/mnnvbqwq" method="POST" id="contactForm">
+        <input type="text" name="prenom" placeholder="Votre prénom" required>
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="white-section">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/insaf-kordjani/" target="_blank">
+        <img src="in.jpeg" alt="LinkedIn" class="icon-link">
+      </a>
+      <a href="cv.pdf" class="cv-link" target="_blank">Télécharger mon CV (PDF)</a>
+    </div>
+    <p>© 2025 Insaf KORDJANI. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
